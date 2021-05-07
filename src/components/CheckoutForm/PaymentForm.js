@@ -46,6 +46,7 @@ export const PaymentForm = ({ checkoutToken, nextStep, backStep, shippingData, o
             <Review checkoutToken={checkoutToken} />
             <Divider />
             <Typography variant="h6" gutterBottom style={{ margin: '20px 0' }}>Payment method</Typography>
+            <Typography variant="subtitle1" gutterBottom style={{ color: '#42B360'}}>For testing use card #: 4242 4242 4242 4242</Typography>
             <Elements stripe={stripePromise}>
                 <ElementsConsumer>{({ elements, stripe }) => (
                     <form onSubmit={(e) => handleSubmit(e, elements, stripe)}>

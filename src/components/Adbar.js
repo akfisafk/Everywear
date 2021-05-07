@@ -21,7 +21,7 @@ export const Adbar = () => {
     return (
         <div style={styles.nav_background}>
             <div style={styles.container}>
-                FREE Shipping On All US Orders | Offer Valid Through 5/15
+                FREE Shipping On All US Orders | Offer Valid Through 8/1
             </div>
         </div>
     )
