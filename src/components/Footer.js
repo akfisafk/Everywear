@@ -16,13 +16,6 @@ const styles = {
         justifyContent: 'space-between',
         alignItems: 'center'
     },
-    disclaimer: {
-        width: '70%'
-    },
-    links_container: {
-        display: 'flex',
-        alignItems: 'center'
-    },
     links: {
         display: 'flex',
         flexDirection: 'column'
@@ -37,10 +30,9 @@ export const Footer = () => {
     return (
         <div style={styles.footer}>
             <div style={styles.container}>
-                <p style={styles.disclaimer}>DISCLAIMER: Everywear does not represent a real business.
-                 Items listed are not for sale or owned by Everywear. All checkout and transactions made are meant for testing purposes only.
+                <p className="disclaimer">DISCLAIMER: Items on Everywear are sample product listings. All checkout and transactions made are meant for testing purposes only.
                 </p>
-                <div style={styles.links_container}>
+                <div className="disclaimer-links">
                     <ul style={styles.links}>
                         <Link to="/" style={styles.link}>About</Link>
                         <Link to="/" style={styles.link}>Login</Link>
@@ -49,7 +41,7 @@ export const Footer = () => {
                         <Link to="/" style={styles.link}>Collections</Link>
                     </ul>
                 </div>
-                <div style={styles.links_container}>
+                <div className="disclaimer-links">
                     <ul style={styles.links}>
                         <Link to="/" style={styles.link}>Support</Link>
                         <Link to="/" style={styles.link}>Shipping</Link>
